@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type = "text/css" href = "../static/css/bootstrap.min.css" rel = "stylesheet"/>
+    <meta charset="UTF-8">
+</head>
+
+<body background = "../static/1.png">
+
+    <nav class="navbar navbar-dark bg-dark">
+       {% for m in menu: %}
+            <a class="navbar-brand mb-0 h1" href = "{{ m.href }}">{{ m.name }}</a>
+        {% endfor %}
+    </nav>
