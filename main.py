@@ -1,120 +1,80 @@
-from flask import Flask, render_template, url_for, request, flash
+from flask import Flask, render_template, request
+from resources import menuConf
+from resources import cardHeaders
+from resources import kii
 
-path = "this"
+#https://habr.com/ru/post/432466/
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'rel;rweq;rke;lrer'
-menu = [
-    {'name': 'User page', 'href': '/'},
-    {'name': 'Info', 'href': '/info'},
-    {'name': 'Feedback', 'href': '/feedback'},
-    {'name': 'Go to admin', 'href': '/login'}
-]
-kii = [
-    {"name": "Основные документы", "href": "https://getbootstrap.com/docs/5.1/utilities/opacity/"},
-    {"name": "Связь             ", "href": ".html"},
-    {"name": "Госсопка          ", "href": ".html"}
-]
-bankSecurity =[
-    {"name": "               Стандарты банка РФ", "href": ".html"},
-    {"name": "Криптография                     ", "href": ".html"},
-    {"name": "ГОСТы по безопасности            ", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"}
-]
-personalData =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"}
-]
-technicalControl =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"}
-]
-primaryDocs =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"}
-]
-GISandMIS =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"}
-]
-secret =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"}
-]
-allDocs =[
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"},
-    {"name": "Основные документы", "href": ".html"},
-    {"name": "Обеспечение безопасности", "href": ".html"},
-    {"name": "Блокировка нарушителей", "href": ".html"},
-    {"name": "Нормативно-правовые акты банка РФ", "href": ".html"}
-]
+userRole = "user"
+
 @app.route("/")
 @app.route("/user")
 def user():
-    return render_template(
-                            "userPage.html",
-                            KII = kii,
-                            menu = menu,
-                            allDocs = allDocs,
-                            secret = secret,
-                            GISandMIS = GISandMIS,
-                            primaryDocs = primaryDocs,
-                            technicalControl = technicalControl,
-                            personalData = personalData,
-                            bankSecurity = bankSecurity
-                        )
+    if userRole == "admin":
+        return render_template(
+                                "userPage.html",
+                                KII = cardHeaders.kii,
+                                menu = menuConf.menuAdmin,
+                                allDocs = cardHeaders.allDocs,
+                                secret = cardHeaders.secret,
+                                GISandMIS = cardHeaders.GISandMIS,
+                                primaryDocs = cardHeaders.primaryDocs,
+                                technicalControl = cardHeaders.technicalControl,
+                                personalData = cardHeaders.personalData,
+                                bankSecurity = cardHeaders.bankSecurity,
+                                govRegulation=cardHeaders.govRegulation
+                            )
+    else:
+        return render_template(
+                                "userPage.html",
+                                KII = cardHeaders.kii,
+                                menu = menuConf.menuUser,
+                                allDocs = cardHeaders.allDocs,
+                                secret = cardHeaders.secret,
+                                GISandMIS = cardHeaders.GISandMIS,
+                                primaryDocs = cardHeaders.primaryDocs,
+                                technicalControl = cardHeaders.technicalControl,
+                                personalData = cardHeaders.personalData,
+                                bankSecurity = cardHeaders.bankSecurity,
+                                govRegulation = cardHeaders.govRegulation
+                            )
+@app.route("/hrefs/<arr>")
+def hrefs(arr):
+    if arr == "kii0":
+        arr = kii.kii0
+    elif arr == "kii1":
+        arr = kii.kii1
+    elif arr == "kii2":
+        arr = kii.kii2
+    return render_template("hrefs.html", menu=menuConf.menuAdmin, colors=menuConf.colors, arr=arr)
+
+@app.route("/login", methods = ["POST", "GET"])
+def login():
+    global userRole
+    if userRole == "admin":
+        return user()
+    else:
+        login = None
+        password = None
+        state = False
+        if request.method == "POST":
+            login = request.form["login"]
+            password = request.form["password"]
+            state = True
+        else:
+            state = False
+        if login == "admin" and password == "admin":
+            userRole = "admin"
+        if userRole != "admin":
+            return render_template("login.html", menu = menuConf.menuUser, name = login, password = password, state = state)
+        else:
+            return user()
 
 @app.route("/info")
 def info():
-    return render_template("info.html", menu = menu)
-
-@app.route("/login")
-def login():
-    return render_template("login.html", menu = menu)
-
-@app.route("/feedback", methods = ["POST", "GET"])
-def feedback():
-    username = None
-    number = None
-    if request.method == 'POST':
-        username = request.form['username']
-        number = request.form['number']
-        flash(f'name: {username}, number: {number}')
-    return render_template("feedback.html", menu = menu, name = username, number = number)
-
-"""
-    для отладки можно создавать тестовый контекст без запуска сервера
-"""
-'''
-with app.test_request_context():
-    print(url_for('info'))
-'''
+    return render_template("info.html", menu = menuConf.menuUser)
 
 if __name__ == "__main__":
     app.run(debug = True)

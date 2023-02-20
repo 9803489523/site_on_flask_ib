@@ -1,39 +1,35 @@
 {% include 'header.html' %}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<form method="post" action="/login">
 <div class="vh-100 d-flex justify-content-center align-items-center">
-  <div class="container" >
+  <div class="container" style = "position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-8 col-lg-6">
         <div class="border border-3 border-primary"></div>
         <div class="card bg-white shadow-lg">
           <div class="card-body p-5">
-            <form class="mb-3 mt-md-4">
+            <form class="mb-3 mt-md-4" method="POST" action ="/login">
               <h2 class="fw-bold mb-2  ">Авторизация</h2>
               <p class=" mb-5">Введите логин и пароль администратора</p>
               <div class="mb-3">
-                <label for="email" class="form-label ">Логин</label>
-                <input type="email" class="form-control" id="email" placeholder="Логин">
+                <label class="form-label ">Логин</label>
+                <input name = "login" class="form-control" id="email" placeholder="Логин">
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label ">Пароль</label>
-                <input type="password" class="form-control" id="password" placeholder="*******">
+                <input type="password" name = "password" class="form-control" id="password" placeholder="*******">
               </div>
               <div class="d-grid mx-auto">
                 <button class="btn btn-outline-dark" type="submit">Войти</button>
               </div>
             </form>
-
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+</form>
 {% include 'footer.html' %}

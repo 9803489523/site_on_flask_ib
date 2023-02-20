@@ -1,0 +1,23 @@
+{% include 'header.html' %}
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <center>
+            <h1 style="background-color: white">Заголовок сайта: </h1>\
+                </center>
+            <ul class = "list-group">
+                {% set ns = namespace(counter=false) %}
+                {% for i in arr: %}
+                    <li href ="/userPage" class="list-group-item list-group-item-{{colors[ns.counter]}}">
+                        <a style="color: black" href = "{{i.href}}">{{loop.index}}). {{i.source}}</a>
+                    </li>
+                    {% set ns.counter = ns.counter+1 %}
+                    {% if ns.counter == 7 %}
+                        {% set ns.counter = 0 %}
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% if login == "admin": %}
+            {% endif %}
+        </div>
+    </div>
+{% include 'footer.html' %}

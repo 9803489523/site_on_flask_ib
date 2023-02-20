@@ -5,18 +5,6 @@
 <br>
 <div class="row row-cols-5 row-cols-md-2 g-1 ">
 
-    <div class="card w-25 text-center border-danger" >
-        <div class="card-header bg-danger text-white border-danger">
-               <h6><b style="font-size: 20px">КИИ</b></h6>
-        </div>
-        <div class="card-body">
-            {% for k in KII: %}
-            <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-primary bg-danger border-danger"><b>{{ k.name }}</b></a>
-            {% endfor %}
-        </div>
-    </div>
-
     <div class="card w-25 text-center border-primary">
         <div class="card-header bg-primary text-white border-primary">
                 <h6><b style="font-size: 20px">Безопасность банков</b></h6>
@@ -24,7 +12,16 @@
         <div class="card-body">
             {% for k in bankSecurity: %}
             <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-primary bg-primary border-primary"><b>{{ k.name }}</b></a>
+            <a href="/hrefs/{{k.href}}" class="btn btn-primary bg-primary border-primary"><b>{{ k.name }}</b></a>
+            {% endfor %}
+        </div>
+        <div class="card-header bg-danger text-white border-danger">
+               <h6><b style="font-size: 20px">КИИ</b></h6>
+        </div>
+        <div class="card-body">
+            {% for k in KII: %}
+            <p class="card-text"></p>
+            <a href="/hrefs/{{k.href}}" class="btn btn-primary bg-danger border-danger"><b>{{ k.name }}</b></a>
             {% endfor %}
         </div>
     </div>
@@ -36,34 +33,25 @@
         <div class="card-body">
             {% for k in personalData: %}
             <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-primary bg-success border-success"><b>{{ k.name }}</b></a>
+            <a href="/hrefs/{{k.href}}" class="btn btn-primary bg-success border-success"><b>{{ k.name }}</b></a>
             {% endfor %}
         </div>
     </div>
 
-    <div class="card w-25 text-center border-warning">
-        <div class="card-header bg-warning text-white border-warning">
-                 <h6><b style="font-size: 20px">Технический контроль</b></h6>
-        </div>
-        <div class="card-body">
-            {% for k in technicalControl: %}
-            <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-warning bg-warning border-warning"><b>{{ k.name }}</b></a>
-            {% endfor %}
-        </div>
+
+    <div class="card w-25 text-center border-danger">
+            <div class="card-header bg-danger text-white border-danger">
+                     <h6><b style="font-size: 20px">Государственные регуляторы</b></h6>
+            </div>
+            <div class="card-body">
+                {% for k in govRegulation: %}
+                <p class="card-text"></p>
+                <a href="/hrefs/{{k.href}}" class="btn btn-danger bg-danger border-danger"><b>{{ k.name }}</b></a>
+                {% endfor %}
+            </div>
     </div>
 
-    <div class="card w-25 text-center border-secondary">
-        <div class="card-header bg-secondary text-white border-secondary">
-                 <h6><b style="font-size: 20px">Руководящие документы</b></h6>
-        </div>
-        <div class="card-body">
-            {% for k in primaryDocs: %}
-            <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-secondary bg-secondary border-secondary"><b>{{ k.name }}</b></a>
-            {% endfor %}
-        </div>
-    </div>
+
 
     <div class="card w-25 text-center border-warning" >
         <div class="card-header bg-warning text-white border-warning">
@@ -72,35 +60,53 @@
         <div class="card-body">
             {% for k in secret: %}
             <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-warning bg-warning border-warning"><b>{{ k.name }}</b></a>
+            <a href="/hrefs/{{k.href}}" class="btn btn-warning bg-warning border-warning"><b>{{ k.name }}</b></a>
+            {% endfor %}
+        </div>
+         <div class="card-header bg-secondary text-white border-secondary">
+                 <h6><b style="font-size: 20px">Руководящие документы</b></h6>
+        </div>
+        <div class="card-body">
+            {% for k in primaryDocs: %}
+            <p class="card-text"></p>
+            <a href="/hrefs/{{k.href}}" class="btn btn-secondary bg-secondary border-secondary"><b>{{ k.name }}</b></a>
             {% endfor %}
         </div>
     </div>
 
-    <div class="card w-25 text-center border-info">
+</div>
+<div class="row row-cols-2 row-cols-md-2 g-1">
+     <div class="card w-50 text-center border-info">
         <div class="card-header bg-info text-white border-info">
                  <h6><b style="font-size: 20px">ГИС и МИС</b></h6>
         </div>
         <div class="card-body">
             {% for k in GISandMIS: %}
             <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-primary bg-info border-info"><b>{{ k.name }}</b></a>
+            <a href="/hrefs/{{k.href}}" class="btn btn-primary bg-info border-info"><b>{{ k.name }}</b></a>
+            {% endfor %}
+        </div>
+         <div class="card-header bg-danger text-white border-danger">
+                 <h6><b style="font-size: 20px">Технический контроль</b></h6>
+        </div>
+        <div class="card-body">
+            {% for k in technicalControl: %}
+            <p class="card-text"></p>
+            <a href="/hrefs/{{k.href}}" class="btn btn-danger bg-danger border-danger"><b>{{ k.name }}</b></a>
             {% endfor %}
         </div>
     </div>
 
-    <div class="card w-25 text-center border-danger">
-        <div class="card-header bg-danger text-white border-danger">
+    <div class="card w-50 text-center border-warning">
+        <div class="card-header bg-warning text-white border-warning">
                  <h6><b style="font-size: 20px">Остальные документы</b></h6>
         </div>
         <div class="card-body">
             {% for k in allDocs: %}
             <p class="card-text"></p>
-            <a href="{{k.href}}" class="btn btn-primary bg-danger border-danger"><b>{{ k.name }}</b></a>
+            <a style = "color: black" href="/hrefs/{{k.href}}" class="btn btn-primary bg-warning border-warning"><b>{{ k.name }}</b></a>
             {% endfor %}
         </div>
     </div>
-
 </div>
-
 {% include 'footer.html' %}
