@@ -1,0 +1,33 @@
+<Card>
+    <header>ФСТЭК России</header>
+    <hrefs>
+        <href1>
+            <source>Указ Президента РФ от 16.08.2004 N 1085 «Вопросы Федеральной службы по техническому и экспортному контролю» (Выписка)</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_14031/</href>
+        </href1>
+        <href2>
+            <source>Приказ ФСТЭК России от 12.05.2005 N 167 «Об утверждении Регламента Федеральной службы по техническому и экспортному контролю» (Зарегистрировано в Минюсте России 06.06.2005 N 6682) [Кодекс]</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_53859/</href>
+        </href2>
+         <href3>
+            <source>Информационное сообщение ФСТЭК России от 29 марта 2019 г. N 240/24/1525 «О требованиях по безопасности информации, устанавливающих уровни доверия к средствам технической защиты информации и средствам обеспечения безопасности информационных технологий»</source>
+            <href>https://fstec.ru/normotvorcheskaya/informatsionnye-i-analiticheskie-materialy/1812-informatsionnoe-soobshchenie-fstek-rossii-ot-29-marta-2019-g-n-240-24-1525</href>
+        </href3>
+         <href4>
+            <source>Информационное сообщение ФСТЭК России от 20 января 2020 г. N 240/24/250 «О применении сертифицированных операционных Microsoft Windows 7 и Microsoft Windows Server 2008 r2 в связи с прекращением их технической поддержки»</source>
+            <href>https://fstec.ru/normotvorcheskaya/informatsionnye-i-analiticheskie-materialy/2016-informatsionnoe-soobshchenie-fstek-rossii-ot-20-yanvarya-2020-g-n-240-24-250</href>
+        </href4>
+         <href5>
+            <source>Письмо ФСТЭК России от 20 марта 2020 г. N 240/84/389 «Рекомендации по обеспечению безопасности объектов критической информационной инфраструктуры при реализации дистанционного режима исполнения должностных обязанностей работниками субъектов критической информационной инфраструктуры»</source>
+            <href>https://fstec.ru/tekhnicheskaya-zashchita-informatsii/obespechenie-bezopasnosti-kriticheskoj-informatsionnoj-infrastruktury/290-inye/2060-pismo-fstek-rossii-ot-20-marta-2020-g-n-240-84-390</href>
+        </href5>
+         <href6>
+            <source>«Методический документ. Методика оценки угроз безопасности информации» (утв. ФСТЭК России 05.02.2021)</source>
+            <href>https://www.consultant.ru/document/cons_doc_LAW_378330/</href>
+        </href6>
+         <href7>
+            <source>«Требования по безопасности информации, устанавливающие уровни доверия к средствам технической защиты информации и средствам обеспечения безопасности информационных технологий (выписка)» (утв. приказом ФСТЭК России от 02.06.2020 N 76) [КОДЕКС]</source>
+            <href>https://www.consultant.ru/document/cons_doc_LAW_367399/</href>
+        </href7>
+    </hrefs>
+</Card>

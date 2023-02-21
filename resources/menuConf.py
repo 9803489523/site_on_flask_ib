@@ -11,12 +11,8 @@ colors = [
 ]
 
 menuUser = [
-    {'name': 'User page', 'href': '/'},
-    {'name': "It's site for search information security"},
-    {'name': 'info', 'href': '/info'},
-    {'name': 'Go to admin', 'href': '/login'}
+    {'name': '', 'href': '/'},
+    {'name': 'Материалы по информационной безопасности', 'href': '/'},
+    {'name': '', 'href': '/'}
 ]
 
-menuAdmin = [
-    {'name': 'Admin page', 'href': '/'}
-]

@@ -1,14 +1,16 @@
 {% include 'header.html' %}
+<br>
+<br>
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <center>
-            <h1 style="background-color: white">Заголовок сайта: </h1>\
+            <h1 style="background-color: white">{{card.header}}</h1>\
                 </center>
             <ul class = "list-group">
                 {% set ns = namespace(counter=false) %}
-                {% for i in arr: %}
+                {% for i in card.hrefs: %}
                     <li href ="/userPage" class="list-group-item list-group-item-{{colors[ns.counter]}}">
-                        <a style="color: black" href = "{{i.href}}">{{loop.index}}). {{i.source}}</a>
+                        <a style="color: black; font-size: 17px" href = "{{i.href}}"><b>{{loop.index}}).</b> {{i.source}}</a>
                     </li>
                     {% set ns.counter = ns.counter+1 %}
                     {% if ns.counter == 7 %}

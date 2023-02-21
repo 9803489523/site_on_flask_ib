@@ -1,0 +1,18 @@
+<Card>
+    <header>Персональные данные. Международные требования</header>
+    <hrefs>
+        <href1>
+            <source>https://eur-lex.europa.eu/eli/reg/2016/679/oj</source>
+            <href>https://eur-lex.europa.eu/eli/reg/2016/679/oj</href>
+        </href1>
+        <href1>
+            <source>Guidelines on Consent under Regulation 2016/679 (wp259rev.01)</source>
+            <href>https://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=623051</href>
+        </href1>
+        <href1>
+            <source>中华人民共和国个人信息保护法 2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过）</source>
+            <href>http://www.npc.gov.cn/npc/c30834/202108/a8c4e3672c74491a80b53a172bb753fe.shtml</href>
+        </href1>
+
+    </hrefs>
+</Card>

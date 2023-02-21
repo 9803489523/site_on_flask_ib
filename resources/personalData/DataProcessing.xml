@@ -1,0 +1,53 @@
+<Card>
+    <header>Персональные данные. Особые случаи обработки ПДн</header>
+    <hrefs>
+        <href1>
+            <source>Федеральный закон от 01.04.1996 N 27-ФЗ „Об индивидуальном (персонифицированном) учете в системе обязательного пенсионного страхования“</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_9839/</href>
+        </href1>
+        <href2>
+            <source>Федеральный закон от 22.04.1996 N 39-ФЗ „О рынке ценных бумаг“</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_10148/</href>
+        </href2>
+        <href3>
+            <source>Федеральный закон от 27.05.1996 N 57-ФЗ „О государственной охране“ [Кодекс]</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_10511/</href>
+        </href3>
+        <href4>
+            <source>Воздушный кодекс Российской Федерации" от 19.03.1997 N 60-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_law_13744/</href>
+        </href4>
+        <href5>
+            <source>Федеральный закон от 15.11.1997 N 143-ФЗ «Об актах гражданского состояния»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_16758/</href>
+        </href5>
+        <href6>
+            <source>Федеральный закон от 28.03.1998 N 53-ФЗ «О воинской обязанности и военной службе»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_18260/</href>
+        </href6>
+        <href7>
+            <source>«Налоговый кодекс Российской Федерации (часть первая)» от 31.07.1998 N 146-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_19671/</href>
+        </href7>
+        <href8>
+            <source>«Налоговый кодекс Российской Федерации (часть вторая)» от 05.08.2000 N 117-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_28165/</href>
+        </href8>
+        <href9>
+            <source>Федеральный закон от 07.08.2001 N 115-ФЗ «О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_32834/</href>
+        </href9>
+        <href10>
+            <source>Федеральный закон от 26.10.2002 N 127-ФЗ «О несостоятельности (банкротстве)»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_39331/</href>
+        </href10>
+        <href11>
+            <source>Федеральный закон от 10.12.2003 N 173-ФЗ «О валютном регулировании и валютном контроле»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_45458/</href>
+        </href11>
+        <href12>
+            <source>Письмо Департамента налоговой и таможенной политики Минфина России от 25 октября 2018 г. N 03-01-11/76554 О присвоении налогоплательщику ИНН и его применение</source>
+            <href>http://base.garant.ru/72122996/</href>
+        </href12>
+    </hrefs>
+</Card>

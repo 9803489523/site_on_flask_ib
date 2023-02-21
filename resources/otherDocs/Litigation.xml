@@ -1,0 +1,29 @@
+<Card>
+    <header>Судебные тяжбы, компьютерная криминалистика</header>
+    <hrefs>
+        <href1>
+            <source>Федеральный закон от 12.08.1995 N 144-ФЗ «Об оперативно-розыскной деятельности»</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_7519/</href>
+        </href1>
+         <href2>
+            <source>«Уголовно-процессуальный кодекс Российской Федерации» от 18.12.2001 N 174-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_34481/</href>
+        </href2>
+         <href3>
+            <source>«Арбитражный процессуальный кодекс Российской Федерации» от 24.07.2002 N 95-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_37800/</href>
+        </href3>
+         <href4>
+            <source>«Гражданский процессуальный кодекс Российской Федерации» от 14.11.2002 N 138-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_LAW_39570/</href>
+        </href4>
+         <href5>
+            <source>«Кодекс административного судопроизводства Российской Федерации» от 08.03.2015 N 21-ФЗ</source>
+            <href>http://www.consultant.ru/document/cons_doc_law_176147/</href>
+        </href5>
+         <href6>
+            <source>ФСБ России. Стандарт СТО.ФСБ.КК 1-2018 «Компьютерная экспертиза. Термины и определения»</source>
+            <href>http://www.fsb.ru/fsb/npd/more.htm%21id%3D10437602%40fsbNpa.html</href>
+        </href6>
+    </hrefs>
+</Card>
