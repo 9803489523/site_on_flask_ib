@@ -1,3 +1,7 @@
+import xml
+
+import flask
+import jinja2
 from flask import Flask, render_template, request
 from resources import menuConf
 from resources import cardHeaders
@@ -209,4 +213,4 @@ def login():
             return user()
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug = False)
